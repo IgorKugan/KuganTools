@@ -1,56 +1,108 @@
-Guia KuganTools – RagnaTales
-⚠️ DISCLAIMER IMPORTANTE ⚠️
-Este programa foi criado exclusivamente para uso no servidor RagnaTales.
-Antes de sair do jogo ou desligar o programa, NÃO ESQUEÇA de desativar o comando
-/walkdelay, a macro NÃO funciona sem com walkdelay ligado.
-Visão Geral
-O KuganTools é uma ferramenta auxiliar desenvolvida para facilitar a movimentação,
-interação e execução de comandos no RagnaTales, oferecendo diferentes modos de controle
-e proteções.
-Configuração Inicial
-- Game EXE: rtales.bin (detectado automaticamente)
-- Definir Centro: captura o ponto central do personagem
-- Definir Clique: captura o ponto de clique padrão
-- Salvar: salva todas as configurações
-- Default: restaura os valores padrão
-Aba WASD Mode
-Permite movimentação do personagem usando WASD ou setas do teclado.
-- Ativar WASD Mode: liga/desliga o modo
-- Modo WASD / Setas: escolhe o tipo de movimentação
-- Walk Distance: distância do movimento
-- Walk Distance (Caps Hold): distância reduzida ao segurar CapsLock
-- Delay: atraso antes do clique
-- Click Move Delay: atraso entre clicar e mover
-- Stop Distance: distância para parar o movimento mais cedo
-Aba Mouse Mode
-Controla a interação usando o mouse.
-- Modo Capslock: segure CapsLock para interagir
-- Modo Right Click: interaja com botão direito
-- Inverter macro: inverte o comportamento do botão direito
-- Mouse Click Move Delay: tempo para retornar o mouse
-- Anti-spam: limita a quantidade de cliques por tempo
-Aba XDourada
-Sistema auxiliar para automações específicas.
-- Enabled: ativa/desativa o módulo
-- Configure Bars: abre a configuração das barras
-Aba Full Protection (FP)
-Sistema de proteção com monitoramento de área.
-- Set Top-Left / Bot-Right: define a área monitorada
-- Set Icon Pos: define posição do ícone
-- Test Icon: testa a detecção
-- Start FP: inicia a proteção
-- Reset Timer: reseta o temporizador ainda nao foi implementado deixei o reset timerkey
-como None
-Aba Comandos
-Envio rápido de comandos no chat do jogo.
-Comandos padrão:
-/walkdelay
-/skip
-@packetfilter APGCBOHM GSPGCBOHM TPGCBOHM BSPGCBOH
-Os outros campos podem ser personalizados pelo usuário.
-Controles Gerais
-- Start / Stop: inicia ou para a ferramenta
-- Hotkey Start/Stop: tecla de atalho configurável
-- Status: mostra se o programa está ativo ou parado
-Aviso Final
-Se algum módulo para de funcionar reinicie ele.
+# KuganTools – RagnaTales
+
+⚠️ **DISCLAIMER IMPORTANTE** ⚠️  
+Este programa foi criado **exclusivamente** para uso no servidor **RagnaTales**.
+
+❗ Para o **KuganTools funcionar corretamente**, o comando **`/walkdelay` deve estar DESATIVADO**.
+
+---
+
+## Visão Geral
+O **KuganTools** é uma ferramenta auxiliar desenvolvida para facilitar **movimentação, interação e execução de comandos** no RagnaTales, oferecendo diferentes modos de controle e proteções para evitar comportamentos indesejados.
+
+⚠️ Funciona **somente** com:
+- Cliente: `rtales.bin`
+- Jogo em **primeiro plano**
+
+---
+
+## Requisitos
+- Windows
+- **AutoHotkey v1** (obrigatório)  
+  ⚠️ *Não funciona com AutoHotkey v2*
+
+🔗 Download AutoHotkey v1 (instalador oficial):  
+https://www.autohotkey.com/download/ahk-install.exe
+
+---
+
+## Execução como Administrador
+⚠️ **IMPORTANTE:**  
+O **KuganTools deve ser executado como Administrador**, tanto o `.ahk` quanto o `.exe`.
+
+➡️ Clique com o botão direito no arquivo  
+➡️ **Executar como administrador**
+
+Caso contrário, algumas funções podem **não funcionar corretamente**.
+
+---
+
+## Arquivos do Projeto
+- `KuganTools_v1_.ahk` → Script principal (AutoHotkey v1)
+- `KuganTools_v1.exe` → Versão compilada
+- `FindText.ahk` → Biblioteca utilizada pelo script
+- `config.ini` → Arquivo de configurações
+- `icons/` → Ícones e imagens da interface
+
+⚠️ **Todos esses arquivos devem ficar juntos na mesma pasta.**
+
+---
+
+## Como Baixar (Recomendado)
+➡️ Vá até a seção **Releases** do GitHub  
+➡️ Baixe o arquivo: **KuganTools_Release_v1.zip**
+
+Este ZIP contém **apenas**:
+- EXE
+- FindText
+- config.ini
+- pasta icons
+
+---
+
+## Como Usar (AutoHotkey)
+1. Instale **AutoHotkey v1** (link acima)
+2. Baixe o ZIP do release e extraia
+3. Clique com o botão direito em `KuganTools_v1_.ahk`
+4. **Executar como administrador**
+5. Abra o RagnaTales
+6. Mantenha o jogo em primeiro plano
+
+---
+
+## Como Usar (EXE)
+1. Baixe o ZIP do release e extraia
+2. Clique com o botão direito em `KuganTools_v1.exe`
+3. **Executar como administrador**
+4. Abra o RagnaTales
+5. Mantenha o jogo em primeiro plano
+
+---
+
+## Configuração Inicial
+- **Game EXE:** `rtales.bin` (detectado automaticamente)
+- **Definir Centro:** captura o ponto central do personagem
+- **Definir Clique:** captura o ponto de clique padrão
+- **Salvar:** salva todas as configurações
+- **Default:** restaura os valores padrão
+
+---
+
+## WASD Mode
+- Permite movimentação do personagem usando:
+  - Teclas **W A S D**
+  - Ou **setas do teclado**
+- Pode ser ligado/desligado diretamente pela interface
+
+---
+
+## Observações Importantes
+- O programa **não funciona em segundo plano**
+- Escala do Windows diferente de 100% pode causar comportamento inesperado
+- Confirme sempre que o **`/walkdelay` está DESATIVADO** antes de usar
+
+---
+
+## Uso por Conta e Risco
+Esta ferramenta é fornecida **como está**.  
+O uso é de responsabilidade do usuário.
